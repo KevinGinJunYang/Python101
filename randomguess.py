@@ -5,7 +5,7 @@ guesses_made = 0
 name = raw_input('Hello! What is your name?\n')
 
 number = random.randint(1, 20)
-print 'Well, {0}, I am thinking of a number between 1 and 20.'.format(name)
+print 'Hi, {0}, Guess my number between 1 and 20.'.format(name)
 
 while guesses_made < 6:
 
@@ -23,6 +23,6 @@ while guesses_made < 6:
         break
 
 if guess == number:
-    print 'Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made)
+    print 'Good job, {0}! That took {1} guesses!'.format(name, guesses_made)
 else:
-    print 'Nope. The number I was thinking of was {0}'.format(number)
+    print ' You lose! the number was, {0}'.format(number)
